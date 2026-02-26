@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="de">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Meine Visitenkarte</title>
+</head>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen">
+  <div class="bg-white max-w-sm w-full rounded-2xl shadow-2xl overflow-hidden">
+    <div class="bg-blue-600 h-24 flex items-center justify-center">
+        <div class="text-white text-4xl font-black tracking-tighter italic">Visitenkarte</div>
+    </div>
+    
+    <div class="p-6 text-center">
+        <h1 class="text-2xl font-bold text-gray-800">Thomas Pudeler</h1>
+        <p class="text-blue-300 font-medium mb-4">Web-Dev & Automatisierung</p>
+        <p class="text-gray-600 text-sm leading-relaxed">
+            Ich kann Motoren, möchte aber Web lernen.
+        </p>
+        <div class="mt-10 grid grid-cols-1 gap-5">
+    <span class="bg-slate-100 text-slate-700 text-xs py-1 px-2 rounded border border-slate-200">HTML/CSS</span>
+    <span class="bg-slate-100 text-slate-700 text-xs py-1 px-2 rounded border border-slate-200">JavaScript</span>
+    <span class="bg-slate-100 text-slate-700 text-xs py-1 px-2 rounded border border-slate-200">C# / SPS</span>
+    <span class="bg-slate-100 text-slate-700 text-xs py-1 px-2 rounded border border-slate-200">Remote Work</span>
+</div>
+
+<button class="mt-8 w-full bg-slate-800 text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-colors">
+    Kontakt aufnehmen
+</button>
+    </div>
+</div>
+    </body>
 </html>
